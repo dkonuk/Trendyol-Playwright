@@ -8,6 +8,7 @@ def test_homepage(page: Page):
     homepage.navigate()
     homepage.accept_cookies()
     homepage.test_major_navigation_links()
+    homepage.navigate()
 
 
 

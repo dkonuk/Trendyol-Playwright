@@ -34,7 +34,6 @@ jobs:
       - name: Install Playwright browsers
         run: | 
           python -m playwright install chromium --with-deps
-
       - name: Lint with flake8
         run: |
         # stop the build if there are Python syntax errors or undefined names
