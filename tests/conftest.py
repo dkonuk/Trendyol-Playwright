@@ -11,7 +11,7 @@ def playwright():
 @pytest.fixture
 def browser(playwright):
     browser = playwright.chromium.launch(
-        timeout=5000,
+        timeout=3000,
         headless=True,
         slow_mo=0)
     yield browser
