@@ -20,10 +20,10 @@ jobs:
         with:
           fetch-depth: 1  # Shallow clone for faster checkout
 
-      - name: Set up Python 3.12
+      - name: Set up Python 3.10
         uses: actions/setup-python@v4  # Updated to v4
         with:
-          python-version: '3.12'
+          python-version: '3.10'
           cache: 'pip'  # Enable pip cachin
 
       - name: Install dependencies
