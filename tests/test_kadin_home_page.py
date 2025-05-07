@@ -6,3 +6,5 @@ def test_kadin_home_page(page: Page):
     kadin_homepage = KadinHomePage(page)
     kadin_homepage.navigate()
     kadin_homepage.click_sepete_en_cok_eklenenler()
+    page.go_back()
+    kadin_homepage.click_one_cikanlar()

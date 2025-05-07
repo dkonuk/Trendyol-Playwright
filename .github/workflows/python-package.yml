@@ -35,4 +35,4 @@ jobs:
           python -m playwright install chromium --with-deps
       - name: Test with pytest
         run: |
-          xvfb-run -a pytest tests/test_github.py -v
+          xvfb-run -a pytest -v

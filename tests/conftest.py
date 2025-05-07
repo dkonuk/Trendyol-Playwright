@@ -12,7 +12,7 @@ def playwright():
 def browser(playwright):
     browser = playwright.chromium.launch(
         timeout=3000,
-        headless=True,
+        headless=False,
         slow_mo=0)
     yield browser
     browser.close()
