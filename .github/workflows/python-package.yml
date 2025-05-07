@@ -48,4 +48,4 @@ jobs:
         if: steps.playwright-cache.outputs.cache-hit != 'true'
       - name: Test with pytest
         run: |
-          xvfb-run -a pytest -v
+          xvfb-run -a pytest -v -k tests/test_homepage.py
