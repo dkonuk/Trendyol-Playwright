@@ -34,9 +34,6 @@ class HomePage:
         for link_text, expected_path in self.main_navigation_links.items():
             element = self.page.get_by_role("link", name=link_text, exact=True)
             element.click()
-            print(link_text + " Page Link Tested")
-            print(expected_path + " Path Tested")
-            print("Page Url :" + self.page.url)
             assert expected_path in self.page.url, f"{expected_path} not found in {self.page.url}"
             self.page.go_back()
 

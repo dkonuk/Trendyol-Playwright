@@ -1,8 +1,7 @@
 from playwright.sync_api import Page
 
-
-class KadinHomePage:
-    KadinHomePageURL = "https://www.trendyol.com/butik/liste/1/kadin"
+class ErkekHomePage:
+    ErkekHomePageURL = "https://www.trendyol.com/butik/liste/2/erkek"
 
 
     def __init__(self, page: Page):
@@ -14,7 +13,7 @@ class KadinHomePage:
         self.kampanya_detaylari = self.page.get_by_role("link", name="Kampanya Detayları")
 
     def navigate(self):
-        self.page.goto(self.KadinHomePageURL)
+        self.page.goto(self.ErkekHomePageURL)
 
     def click_sepete_en_cok_eklenenler(self):
         self.sepete_en_cok_eklenenler.click()
