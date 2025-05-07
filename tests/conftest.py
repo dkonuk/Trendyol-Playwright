@@ -12,7 +12,7 @@ def playwright():
 def browser(playwright):
     browser = playwright.chromium.launch(
         timeout=3000,
-        headless=False,
+        headless=True,
         slow_mo=0)
     yield browser
     browser.close()
@@ -25,4 +25,3 @@ def page(browser):
     page.set_default_timeout(5000)  # Set 5 second timeout for all actions
     yield page
     page.close()
-
