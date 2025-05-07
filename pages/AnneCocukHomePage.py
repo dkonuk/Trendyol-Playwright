@@ -12,6 +12,10 @@ class AnneCocukHomePage:
         self.oyuncak = self.page.get_by_role("link", name="Oyuncak", exact=True)
         self.bebek_bezi = self.page.get_by_role("link", name="Bebek Bezi", exact=True).first
         self.ayakkabi = self.page.get_by_role("link", name="Ayakkabı", exact=True)
+        self.banyo_tuvalet = self.page.get_by_role("link", name="Banyo & Tuvalet", exact=True)
+        self.beslenme = self.page.get_by_role("link", name="Beslenme", exact=True)
+        self.cocuk_gerec = self.page.get_by_role("link", name="Çocuk Gereç", exact=True)
+        self.cocuk_kitaplari = self.page.get_by_role("link", name="Çocuk Kitapları")
 
 
     def navigate(self):
@@ -37,3 +41,15 @@ class AnneCocukHomePage:
 
     def click_ayakkabi(self):
         self.ayakkabi.click()
+
+    def click_banyo_tuvalet(self):
+        self.banyo_tuvalet.click()
+
+    def click_beslenme(self):
+        self.beslenme.click()
+
+    def click_cocuk_gerec(self):
+        self.cocuk_gerec.click()
+
+    def click_cocuk_kitaplari(self):
+        self.cocuk_kitaplari.click()
